@@ -1,24 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alfa Dashboard
+
+A modern financial dashboard built with Next.js 16, React, and Tailwind CSS.
+
+## Project Structure
+
+```
+alfa-dashboard/
+├── app/                    # Next.js App Router
+│   ├── dashboard/         # Dashboard routes
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx          # Home page
+│   └── globals.css        # Global styles
+│
+├── src/                    # Source code
+│   ├── components/        # React components
+│   │   ├── dashboard/    # Dashboard-specific components
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── Stats.tsx
+│   │   │   ├── Transactions.tsx
+│   │   │   ├── DailyLimit.tsx
+│   │   │   ├── SavingPlans.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── ui/           # Reusable UI components
+│   │   └── FontLoader.tsx
+│   └── lib/              # Utility functions
+│       └── utils.ts
+│
+├── public/                # Static assets
+├── assets/                # Source assets
+└── [config files]        # Configuration files
+```
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Modern dashboard UI with financial metrics
+- Responsive design
+- Custom fonts (Urbanist, Clash Display)
+- Transaction management
+- Savings tracking
+- Daily limit monitoring
 
 ## Learn More
 
